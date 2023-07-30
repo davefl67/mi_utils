@@ -17,6 +17,19 @@ CG.dmg = true
 -- calms the waters
 CG.water = true
 
+-- sets player skills
+CG.skill = {
+    allow = true,
+    
+    shooting = 30,
+    stamina = 50,
+    strength = 30,
+    breathing = 30,
+    wheelie = 50,
+    flying = 50,
+    stealth = 30
+}
+
 -- global variables
 Debug = CG.debug
 Target = exports.ox_target
