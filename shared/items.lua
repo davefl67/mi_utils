@@ -1,5 +1,9 @@
 UT = {}
 
+UT.grill = {
+    time = 15000, -- time to set up grill prop
+}
+
 UT.smoking = {
 
     vape = {

@@ -18,7 +18,7 @@ local function versionPrint(_type, log)
 end
 
 local function CheckMenuVersion()
-    PerformHttpRequest('https://raw.githubusercontent.com/MIAgimir/mi_utils/master/version.txt', function(err, text, headers)
+    PerformHttpRequest('https://raw.githubusercontent.com/MesaIndigo/mi_utils/master/version.txt', function(err, text, headers)
         local currentVersion = GetResourceMetadata(GetCurrentResourceName(), 'version')
 
         if not text then 
@@ -26,13 +26,16 @@ local function CheckMenuVersion()
             return
         end
 
+        versionPrint('success', '----------------------------------------')
         versionPrint('success', ('Current Version: %s'):format(currentVersion))
-        versionPrint('success', ('Latest Version: %s'):format(text))
         
         if text == currentVersion then
             versionPrint('success', 'You are running the latest version.')
+            versionPrint('success', '----------------------------------------')
         else
             versionPrint('error', ('You are currently running an outdated version, please update to version %s'):format(text))
+            versionPrint('success', ('Latest Version: %s'):format(text))
+            versionPrint('success', '----------------------------------------')
         end
     end)
 end
