@@ -14,27 +14,23 @@ end)
 ----------------------------------------------------------------------------------------------------
 local function versionPrint(_type, log)
     local color = _type == 'success' and '^2' or '^1'
-    print(('^5[M.I. Resources]%s %s^7'):format(color, log))
+    print(('^3[^6Mesa Indigo^3]%s %s^7'):format(color, log))
 end
 
 local function CheckMenuVersion()
     PerformHttpRequest('https://raw.githubusercontent.com/MesaIndigo/mi_utils/master/version.txt', function(err, text, headers)
         local currentVersion = GetResourceMetadata(GetCurrentResourceName(), 'version')
-
         if not text then 
-            versionPrint('error', 'Currently unable to run a version check.')
+            versionPrint('error', 'ERROR: Unable to check version. Your ports or connections may be blocking access.')
             return
         end
-
         versionPrint('success', '----------------------------------------')
-        versionPrint('success', ('Current Version: %s'):format(currentVersion))
-        
         if text == currentVersion then
-            versionPrint('success', 'You are running the latest version.')
+            versionPrint('success', ('script version up to date: %s'):format(currentVersion))
             versionPrint('success', '----------------------------------------')
         else
-            versionPrint('error', ('You are currently running an outdated version, please update to version %s'):format(text))
-            versionPrint('success', ('Latest Version: %s'):format(text))
+            versionPrint('error', ('script version out of date: %s'):format(text))
+            versionPrint('success', 'please update to the latest version')
             versionPrint('success', '----------------------------------------')
         end
     end)
