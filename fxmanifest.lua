@@ -34,5 +34,6 @@ server_scripts {
     '@oxmysql/lib/MySQL.lua',
     '@ox_core/imports/server.lua',
     'server/events.lua',
+    'server/version.lua',
     'server/main.lua'
 }
