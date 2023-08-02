@@ -2,7 +2,7 @@ exports('smoke_cigarette', function()
     local maxHealth = GetEntityMaxHealth(cache.ped)
 	local health = GetEntityHealth(cache.ped)
     if lib.progressBar({
-        duration = UT.smoking.cigarrette.time,
+        duration = UT.smoking.cigarette.time,
         label = 'Smoking Cigarette',
         useWhileDead = false, allowFalling = false, allowRagdoll = false,
         allowCuffed = false, canCancel = true, disable = { car = false },
@@ -15,7 +15,7 @@ exports('smoke_cigarette', function()
             pos = vec3(0.0, 0.0, 0.0), rot = vec3(0.0, 0.0, 0.0)
         }
     })
-    then if not UT.smoking.cigarrette.damage then return
+    then if not UT.smoking.cigarette.damage then return
         else
             SetEntityHealth(cache.ped, math.min(maxHealth,
             math.floor(health - maxHealth / UT.smoking.cigarrette.dmgamt)))
@@ -52,7 +52,7 @@ exports('smoke_vape', function()
     local maxHealth = GetEntityMaxHealth(cache.ped)
 	local health = GetEntityHealth(cache.ped)
     if lib.progressBar({
-        duration = 8000,
+        duration = UT.smoking.vape.time,
         label = 'Smoking Cigarette',
         useWhileDead = false, allowFalling = false, allowRagdoll = false,
         allowCuffed = false, canCancel = true, disable = { car = false },
