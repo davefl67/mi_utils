@@ -5,10 +5,25 @@
 ![GitHub](https://img.shields.io/github/license/MesaIndigo/mi_documents)
 
 ## Description:
-
+This script is used for managing certain features of your server and as an export resource for the items I've made. I will be adding to this over time.
 
 ## Features:
+Config options for:
+- enable / disable vehicle radios
+- enable / disable idle camera
+- enable / disable HUD ammo & location
+- adjust damage of melee weapons
+- adjust the waters to be more calm
+- set / allow player skills
 
+Export options for items:
+- portable grill (WIP)
+- cigarettes, cigars, & vape
+- explosive & gas bombs
+- repair / cleaning vehicle kit
+- diving gear
+- 3 levels of body armor
+- 7 kinds of drugs and effects
 
 ## Dependencies:
 - [ox_lib](https://github.com/overextended/ox_lib)
