@@ -12,7 +12,7 @@ UT.smoking = {
         dmgamt = 128     -- amount of damage divided by max health
     },
 
-    cigarrette = {
+    cigarette = {
         time = 25000,   -- length of animation
         damage = true,  -- allow damage when done smoking
         dmgamt = 64     -- amount of damage divided by max health
@@ -113,10 +113,6 @@ UT.drugs = {
     },
 
     pillmolly = {
-        dur = 10000
-    },
-
-    jenkem = {
         dur = 10000
     },
 
