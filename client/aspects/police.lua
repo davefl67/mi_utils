@@ -1,9 +1,10 @@
+-- WIP DO NOT USE
 local shield, holding = nil, {shield = 0, used = false}
 local shieldmod = lib.requestModel('prop_ballistic_shield')
-local dict, anim = lib.requestAnimDict('missfinale_c2mcs_1'), lib.requestAnimSet('fin_c2_mcs_1_camman')
+local dict, anim = lib.requestAnimDict('combat@gestures@gang@pistol_1h@beckon'), lib.requestAnimSet('0')
 
 local rioton = function()
-    while not HasModelLoaded(shield) do
+    while not HasModelLoaded(shieldmod) do
         Citizen.Wait(10)
     end
     while not HasAnimDictLoaded(dict) do
@@ -30,6 +31,7 @@ local rioton = function()
             45509),0.35, 0.05, -0.1, 300.0, 180.0, 60.0, true, true, true, true, 0, true)
             holding.shield = shield
             holding.used = true
+
         end
     end
     
@@ -51,6 +53,7 @@ local riotoff = function()
                 clip = 'try_shirt_positive_d'
             },
         }) then
+            ClearPedTasksImmediately(PlayerPedId())
             DetachEntity(holding.shield, false, true)
             DeleteEntity(holding.shield)
             holding.shield = 0
@@ -60,7 +63,24 @@ local riotoff = function()
 end
 
 exports('riotshield', function()
-    
-    
-    
+
+
 end)
+
+RegisterCommand('riotshield', function()
+    Citizen.CreateThread(function()
+        local set = false
+        while not set do
+            if not holding.used then
+                set = true
+                rioton()
+                
+            else
+                set = false
+                ClearPedTasksImmediately(PlayerPedId())
+                riotoff()
+            end
+            Citizen.Wait(500)
+        end
+    end)
+end, false)
