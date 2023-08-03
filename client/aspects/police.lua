@@ -1,7 +1,8 @@
 -- WIP DO NOT USE
 local shield, holding = nil, {shield = 0, used = false}
 local shieldmod = lib.requestModel('prop_ballistic_shield')
-local dict, anim = lib.requestAnimDict('combat@gestures@gang@pistol_1h@beckon'), lib.requestAnimSet('0')
+local dict, anim = lib.requestAnimDict('anim@random@shop_clothes@watches', 200),
+lib.requestAnimSet('base', 200)
 
 local rioton = function()
     while not HasModelLoaded(shieldmod) do
@@ -28,10 +29,10 @@ local rioton = function()
             local plycrd = GetOffsetFromEntityInWorldCoords(GetPlayerPed(PlayerId()), 0.0, 0.0, -5.0)
             shield = CreateObject(shieldmod, plycrd.x, plycrd.y, plycrd.z, true, false, false)
             AttachEntityToEntity(shield, GetPlayerPed(PlayerId()), GetPedBoneIndex(GetPlayerPed(PlayerId()),
-            45509),0.35, 0.05, -0.1, 300.0, 180.0, 60.0, true, true, true, true, 0, true)
+            45509),0.2, 0.25, -0.05, 305.0, 155.0, 87.5, true, true, true, true, 0, true)
             holding.shield = shield
             holding.used = true
-
+            TaskPlayAnim(cache.ped, dict, anim, 8.0, 8.0, -1, 49, 0, false, false, false)
         end
     end
     
@@ -41,7 +42,7 @@ local riotoff = function()
     if holding.used then
         if lib.progressBar({
             duration = 5000,
-            label = 'Removing Roit Shield',
+            label = 'Removing Riot Shield',
             useWhileDead = false,
             canCancel = true,
             disable = {
@@ -68,19 +69,9 @@ exports('riotshield', function()
 end)
 
 RegisterCommand('riotshield', function()
-    Citizen.CreateThread(function()
-        local set = false
-        while not set do
-            if not holding.used then
-                set = true
-                rioton()
-                
-            else
-                set = false
-                ClearPedTasksImmediately(PlayerPedId())
-                riotoff()
-            end
-            Citizen.Wait(500)
-        end
-    end)
+    if not holding.used then
+        rioton()
+    elseif holding.used then
+        riotoff()
+    else return end
 end, false)
