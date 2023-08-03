@@ -18,7 +18,7 @@ exports('smoke_cigarette', function()
     then if not UT.smoking.cigarette.damage then return
         else
             SetEntityHealth(cache.ped, math.min(maxHealth,
-            math.floor(health - maxHealth / UT.smoking.cigarrette.dmgamt)))
+            math.floor(health - maxHealth / UT.smoking.cigarette.dmgamt)))
         end
     end
 end)

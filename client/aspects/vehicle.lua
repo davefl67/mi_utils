@@ -2,11 +2,11 @@ exports('vehkit_repair', function()
     local player = PlayerPedId()
     local vehicle = lib.getClosestVehicle(GetEntityCoords(player), 2.5, false)
 
-    if Item.vehicle.repair and vehicle then
+    if UT.vehicle.repair and vehicle then
         SetVehicleDoorOpen(vehicle, 4, false, false)
         Citizen.Wait(500)
         if lib.progressBar({
-            duration = Item.vehicle.repairtime,
+            duration = UT.vehicle.repairtime,
             label = 'Repairing Engine',
             useWhileDead = false,
             canCancel = true,
@@ -42,10 +42,10 @@ exports('vehkit_clean', function()
     local player = PlayerPedId()
     local vehicle = lib.getClosestVehicle(GetEntityCoords(player), 3.0, false)
 
-    if Item.vehicle.repair and vehicle then
+    if UT.vehicle.repair and vehicle then
         Citizen.Wait(500)
         if lib.progressBar({
-            duration = Item.vehicle.cleantime,
+            duration = UT.vehicle.cleantime,
             label = 'Cleaning Vehicle',
             useWhileDead = false,
             canCancel = true,
