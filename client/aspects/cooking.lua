@@ -1,3 +1,6 @@
+--[[
+        WIP - waiting on cooling script for export to menu
+
 exports('cookinggrill', function()
 
 end)
@@ -84,3 +87,4 @@ RegisterCommand('grill', function()
         exports.ox_target:addLocalEntity(grill, grillops)
     end
 end, false)
+]]

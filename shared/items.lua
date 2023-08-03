@@ -63,6 +63,10 @@ UT.divegear = {
     restrict = false -- allow players to use gear while in water
 }
 
+UT.riotshield = {
+    time = 5000, -- time of progress bar
+}
+
 UT.armor = {
 
     level1 = {

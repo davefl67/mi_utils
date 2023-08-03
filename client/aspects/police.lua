@@ -13,7 +13,7 @@ local rioton = function()
     end
     if not holding.used then
         if lib.progressBar({
-            duration = 5000,
+            duration = UT.riotshield.time,
             label = 'Equipping Riot Shield',
             useWhileDead = false,
             canCancel = true,
@@ -41,7 +41,7 @@ end
 local riotoff = function()
     if holding.used then
         if lib.progressBar({
-            duration = 5000,
+            duration = UT.riotshield.time,
             label = 'Removing Riot Shield',
             useWhileDead = false,
             canCancel = true,
@@ -64,14 +64,9 @@ local riotoff = function()
 end
 
 exports('riotshield', function()
-
-
-end)
-
-RegisterCommand('riotshield', function()
     if not holding.used then
         rioton()
     elseif holding.used then
         riotoff()
     else return end
-end, false)
+end)

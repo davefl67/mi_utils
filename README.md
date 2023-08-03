@@ -23,7 +23,7 @@ Export options for items:
 - repair / cleaning vehicle kit
 - diving gear
 - 3 levels of body armor
-- riot shield (WIP / Do Not Use)
+- riot shield
 - 7 kinds of drugs and effects
 
 ## Dependencies:
