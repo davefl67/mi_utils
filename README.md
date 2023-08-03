@@ -26,6 +26,10 @@ Export options for items:
 - riot shield
 - 7 kinds of drugs and effects
 
+## Images
+<img src="https://imgur.com/xdrb4ML.png" height="150" width="150"><img src="https://imgur.com/1EOdseH.png" height="150" width="150"><img src="https://imgur.com/V6D3W5o.png" height="150" width="150"><img src="https://imgur.com/Tn1O8ZZ.png" height="150" width="150"><img src="https://imgur.com/5OwyUZV.png" height="150" width="150">
+
+
 ## Dependencies:
 - [ox_lib](https://github.com/overextended/ox_lib)
 - [ox_target](https://github.com/overextended/ox_target)
