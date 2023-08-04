@@ -88,36 +88,36 @@ UT.armor = {
 
 UT.drugs = {
 
-    weedsativa = {
+    weedsativa = { -- time = time doing animation / dur = duration of effect
         time = 10000,
-        dur = 10000
+        dur = 30000
     },
 
-    weedindica = {
+    weedindica = { -- time = time doing animation / dur = duration of effect
         time = 10000,
-        dur = 10000
+        dur = 30000
     },
 
-    weedhybrid = {
+    weedhybrid = { -- time = time doing animation / dur = duration of effect
         time = 10000,
-        dur = 10000
+        dur = 30000
     },
 
-    crack_cocaine = {
-        dur = 10000
+    crack_cocaine = { -- dur = duration of effect
+        dur = 30000
     },
 
-    crack_rocks = {
+    crack_rocks = { -- time = time doing animation / dur = duration of effect
         time = 10000,
-        dur = 10000
+        dur = 30000
     },
 
-    pillecstasy = {
-        dur = 10000
+    pillecstasy = { -- dur = duration of effect
+        dur = 30000
     },
 
-    pillmolly = {
-        dur = 10000
+    pillmolly = { -- dur = duration of effect
+        dur = 30000
     },
 
 }

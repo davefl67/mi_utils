@@ -14,7 +14,9 @@ exports('weed_sativa', function()
     		ShakeGameplayCam("DRUNK_SHAKE", 0.6)
 
 			Citizen.Wait(UT.drugs.weedsativa.dur/2)
-
+            local maxHealth = GetEntityMaxHealth(cache.ped)
+            local health = GetEntityHealth(cache.ped)
+            SetEntityHealth(cache.ped, math.min(maxHealth, math.floor(health + maxHealth / 32)))
             ShakeGameplayCam("DRUNK_SHAKE", 0.3)
 
             Citizen.Wait(UT.drugs.weedsativa.dur/2)
@@ -44,7 +46,9 @@ exports('weed_indica', function()
     		ShakeGameplayCam("DRUNK_SHAKE", 0.6)
 
 			Citizen.Wait(UT.drugs.weedindica.dur/2)
-
+            local maxHealth = GetEntityMaxHealth(cache.ped)
+            local health = GetEntityHealth(cache.ped)
+            SetEntityHealth(cache.ped, math.min(maxHealth, math.floor(health + maxHealth / 32)))
             ShakeGameplayCam("DRUNK_SHAKE", 0.3)
 
             Citizen.Wait(UT.drugs.weedindica.dur/2)
@@ -74,7 +78,9 @@ exports('weed_hybrid', function()
     		ShakeGameplayCam("DRUNK_SHAKE", 0.6)
 
 			Citizen.Wait(UT.drugs.weedhybrid.dur/2)
-
+            local maxHealth = GetEntityMaxHealth(cache.ped)
+            local health = GetEntityHealth(cache.ped)
+            SetEntityHealth(cache.ped, math.min(maxHealth, math.floor(health + maxHealth / 32)))
             ShakeGameplayCam("DRUNK_SHAKE", 0.3)
 
             Citizen.Wait(UT.drugs.weedhybrid.dur/2)
@@ -100,8 +106,10 @@ exports('crack_cocaine', function()
                 blendIn = 4.0, blendOut = 4.0, playbackRate = 0
             },
         }) then
+            SetPlayerMaxArmour(cache.ped, 100)
+			SetPedArmour(cache.ped, 50.0)
             SetTimecycleModifier("spectator6")
-			AnimpostfxPlay("DrugsTrevorClownsFight", 10000001, true)
+			AnimpostfxPlay("BikerFormation", 10000001, true)
     		ShakeGameplayCam("DRUNK_SHAKE", 0.6)
 
 			Citizen.Wait(UT.drugs.crack_cocaine.dur/2)
@@ -110,9 +118,11 @@ exports('crack_cocaine', function()
 
             Citizen.Wait(UT.drugs.crack_cocaine.dur/2)
 
+
 			AnimpostfxStopAll()
     		ShakeGameplayCam("DRUNK_SHAKE", 0.0)
 			SetTimecycleModifierStrength(0.0)
+            SetPedArmour(cache.ped, 0.0)
         else
             return
         end
@@ -130,8 +140,10 @@ exports('crack_rocks', function()
                 scenario = 'WORLD_HUMAN_DRUG_DEALER'
             },
         }) then
+            SetPlayerMaxArmour(cache.ped, 100)
+			SetPedArmour(cache.ped, 50.0)
             SetTimecycleModifier("spectator6")
-			AnimpostfxPlay("DrugsTrevorClownsFight", 10000001, true)
+			AnimpostfxPlay("ChopVision", 10000001, true)
     		ShakeGameplayCam("DRUNK_SHAKE", 0.6)
 
 			Citizen.Wait(UT.drugs.crack_rocks.dur/2)
@@ -140,6 +152,7 @@ exports('crack_rocks', function()
 
             Citizen.Wait(UT.drugs.crack_rocks.dur/2)
 
+            SetPedArmour(cache.ped, 0.0)
 			AnimpostfxStopAll()
     		ShakeGameplayCam("DRUNK_SHAKE", 0.0)
 			SetTimecycleModifierStrength(0.0)
@@ -162,7 +175,7 @@ exports('pill_ecstasy', function()
             },
         }) then
             SetTimecycleModifier("spectator6")
-			AnimpostfxPlay("DrugsTrevorClownsFight", 10000001, true)
+			AnimpostfxPlay("DMT_flight", 10000001, true)
     		ShakeGameplayCam("DRUNK_SHAKE", 0.6)
 
 			Citizen.Wait(UT.drugs.pillecstasy.dur/2)
@@ -193,7 +206,7 @@ exports('pill_molly', function()
             },
         }) then
             SetTimecycleModifier("spectator6")
-			AnimpostfxPlay("DrugsTrevorClownsFight", 10000001, true)
+			AnimpostfxPlay("CrossLine", 10000001, true)
     		ShakeGameplayCam("DRUNK_SHAKE", 0.6)
 
 			Citizen.Wait(UT.drugs.pillmolly.dur/2)
@@ -201,37 +214,6 @@ exports('pill_molly', function()
             ShakeGameplayCam("DRUNK_SHAKE", 0.3)
 
             Citizen.Wait(UT.drugs.pillmolly.dur/2)
-
-			AnimpostfxStopAll()
-    		ShakeGameplayCam("DRUNK_SHAKE", 0.0)
-			SetTimecycleModifierStrength(0.0)
-        else
-            return
-        end
-    end
-end)
-
-exports('bottle_jenkem', function()
-    if UT.drugs.jenkem then
-        if lib.progressBar({
-            duration = 3000,
-            label = 'Taking a hit',
-            useWhileDead = false, allowFalling = false, allowRagdoll = false,
-            allowCuffed = false, canCancel = true, disable = { car = false },
-            anim = {
-                dict = 'mp_suicide', clip = 'anim@safehouse@bong', flag = 49,
-                blendIn = 4.0, blendOut = 4.0, playbackRate = 0
-            },
-        }) then
-            SetTimecycleModifier("spectator6")
-			AnimpostfxPlay("DrugsTrevorClownsFight", 10000001, true)
-    		ShakeGameplayCam("DRUNK_SHAKE", 0.6)
-
-			Citizen.Wait(UT.drugs.jenkem.dur/2)
-
-            ShakeGameplayCam("DRUNK_SHAKE", 0.3)
-
-            Citizen.Wait(UT.drugs.jenkem.dur/2)
 
 			AnimpostfxStopAll()
     		ShakeGameplayCam("DRUNK_SHAKE", 0.0)

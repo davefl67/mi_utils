@@ -2,6 +2,9 @@
 CG = {}
 CG.debug = true
 
+-- disables all dispatch and removes police peds / vehicles
+CG.dispatch = true
+
 -- disables vehicle radios
 CG.radios = true
 
@@ -20,7 +23,7 @@ CG.water = true
 -- sets player skills
 CG.skill = {
     allow = true,
-    
+
     shooting = 30,
     stamina = 50,
     strength = 30,

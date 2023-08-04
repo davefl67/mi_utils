@@ -38,8 +38,7 @@ server_scripts {
     'server/main.lua'
 }
 
--- stream stuff
-
+-- stream
 files {
 -- props
     'stream/**/**/*.ytyp',
