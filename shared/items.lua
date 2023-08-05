@@ -4,10 +4,15 @@ UT.grill = {
     time = 15000, -- time to set up grill prop
 }
 
+UT.badges = {
+    maxdist = 10.0, -- max distance to effect nearby peds
+}
+
 UT.smoking = {
 
     vape = {
         model = 'xm3_prop_xm3_vape_01a', -- change to 'h4_prop_battle_vape_01' if below mpchristmas3 build
+        time = 25000,   -- length of animation
         damage = true,  -- allow damage when done smoking
         dmgamt = 128     -- amount of damage divided by max health
     },
