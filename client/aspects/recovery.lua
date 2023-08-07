@@ -1,5 +1,4 @@
--- in progress
-RegisterCommand('bandage', function()
+exports('bandage', function()
     local maxHealth = GetEntityMaxHealth(cache.ped)
 	local health = GetEntityHealth(cache.ped)
     if lib.progressBar({
@@ -25,4 +24,4 @@ RegisterCommand('bandage', function()
     }) then 
         SetEntityHealth(cache.ped, math.min(maxHealth, math.floor(health + maxHealth / 16)))
     end
-end, false)
+end)

@@ -1,11 +1,10 @@
--- WIP DO NOT USE
+-- WIP DO NOT USE anim@random@shop_clothes@watches : base
 local shield, holding = nil, {shield = 0, used = false}
 local playinganim = false
-local shieldmod = lib.requestModel('prop_ballistic_shield')
-local dict, anim = lib.requestAnimDict('anim@random@shop_clothes@watches', 200),
-lib.requestAnimSet('base', 200)
 
 local rioton = function()
+    local shieldmod = lib.requestModel('prop_ballistic_shield')
+    local dict = lib.requestAnimDict('anim@random@shop_clothes@watches', 200)
     while not HasModelLoaded(shieldmod) do
         Citizen.Wait(10)
     end
@@ -35,12 +34,12 @@ local rioton = function()
             holding.used = true
             
             
-            TaskPlayAnim(cache.ped, dict, anim, 8.0, 8.0, -1, 49, 0, false, false, false)
+            TaskPlayAnim(cache.ped, dict, 'base', 8.0, 8.0, -1, 49, 0, false, false, false)
             playinganim = true
             if playinganim then
-                TaskPlayAnim(cache.ped, dict, anim, 8.0, 8.0, -1, 49, 0, false, false, false)
+                TaskPlayAnim(cache.ped, dict, 'base', 8.0, 8.0, -1, 49, 0, false, false, false)
             else
-                TaskPlayAnim(cache.ped, dict, anim, 8.0, 8.0, -1, 49, 0, false, false, false)
+                TaskPlayAnim(cache.ped, dict, 'base', 8.0, 8.0, -1, 49, 0, false, false, false)
             end
         end
     end
