@@ -1,8 +1,8 @@
 ![util](https://github.com/MesaIndigo/mi_utils/assets/116332087/e681f894-28a9-43ed-9f56-8c4195876aa3)
 
 ### M.I. Resources Support Discord: [click me](https://discord.gg/XwhBUGErxY)
-![GitHub all releases](https://img.shields.io/github/downloads/MesaIndigo/mi_documents/total)
-![GitHub](https://img.shields.io/github/license/MesaIndigo/mi_documents)
+![GitHub all releases](https://img.shields.io/github/downloads/MesaIndigo/mi_utils/total)
+![GitHub](https://img.shields.io/github/license/MesaIndigo/mi_utils)
 
 ## Description:
 This script is used for managing certain features of your server and as an export resource for the items I've made. I will be adding to this over time.
