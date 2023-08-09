@@ -1,9 +1,9 @@
 -- in progress
 local obj = nil
-local crds = GetOffsetFromEntityInWorldCoords(cache.ped, 0.0, 0.6, 0.0)
-local head = GetEntityHeading(cache.ped)
 
 local spawnbox = function()
+    local crds = GetOffsetFromEntityInWorldCoords(cache.ped, 0.0, 0.6, 0.0)
+    local head = GetEntityHeading(cache.ped)
     obj = CreateObject('v_ind_cfbox2', crds.x, crds.y, crds.z, true, false, false)
     SetEntityHeading(obj, head)
     PlaceObjectOnGroundProperly(obj)
@@ -20,6 +20,7 @@ end
 exports('mrepack', function()
     local mrechance = math.random(0,4)
     local sidechance = math.random(0,1)
+    lib.callback('miut:takeitem', false, function() end, 'mre_1', 1)
     spawnbox()
     if lib.progressBar({
         duration = 5000,
