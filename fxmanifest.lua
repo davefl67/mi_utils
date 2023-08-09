@@ -38,7 +38,3 @@ server_scripts {
     'server/version.lua',
     'server/main.lua'
 }
-
-files {
-    'web/peds/*.png'
-}
