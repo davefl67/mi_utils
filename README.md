@@ -33,6 +33,7 @@ Export options for items:
 ## Dependencies:
 - [ox_lib](https://github.com/overextended/ox_lib)
 - [ox_target](https://github.com/overextended/ox_target)
+- [mi_stream](https://github.com/MIAgimir/mi_stream/releases)
 
 ## Install
 - Download latest release
