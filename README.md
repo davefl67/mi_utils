@@ -24,6 +24,7 @@ Export options for items:
 - diving gear
 - 3 levels of body armor
 - riot shield
+- MRE pack with randomized items
 - 7 kinds of drugs and effects
 
 ## Images
