@@ -38,25 +38,25 @@ exports('mrepack', function()
         deletebox()
         -- MRE main
         if mrechance == 0 then
-            lib.callback('miut:giveitem', false, function() end, 'mre_chilimac', 1)
+            lib.callback('miut:giveitem', false, function() end, UT.mre.main1, 1)
         elseif mrechance == 1 then
-            lib.callback('miut:giveitem', false, function() end, 'mre_beefstew', 1)
+            lib.callback('miut:giveitem', false, function() end, UT.mre.main2, 1)
         elseif mrechance == 2 then
-            lib.callback('miut:giveitem', false, function() end, 'mre_chkenchilada', 1)
+            lib.callback('miut:giveitem', false, function() end, UT.mre.main3, 1)
         elseif mrechance == 3 then
-            lib.callback('miut:giveitem', false, function() end, 'mre_veggieomelet', 1)
+            lib.callback('miut:giveitem', false, function() end, UT.mre.main4, 1)
         elseif mrechance == 4 then
-            lib.callback('miut:giveitem', false, function() end, 'mre_chknking', 1)
+            lib.callback('miut:giveitem', false, function() end, UT.mre.main5, 1)
         end
         -- MRE Side
         if sidechance == 0 then
-            lib.callback('miut:giveitem', false, function() end, 'mre_corn', 1)
+            lib.callback('miut:giveitem', false, function() end, UT.mre.side1, 1)
         else
-            lib.callback('miut:giveitem', false, function() end, 'mre_tmsoup', 1)
+            lib.callback('miut:giveitem', false, function() end, UT.mre.side2, 1)
         end
         -- MRE bread / water / snack
-        lib.callback('miut:giveitem', false, function() end, 'mre_bread', 1)
-        lib.callback('miut:giveitem', false, function() end, 'water', 2)
-        lib.callback('miut:giveitem', false, function() end, 'ps_qs', 1)
+        lib.callback('miut:giveitem', false, function() end, UT.mre.bread, 1)
+        lib.callback('miut:giveitem', false, function() end, UT.mre.drink, 2)
+        lib.callback('miut:giveitem', false, function() end, UT.mre.snack, 1)
     end
 end)

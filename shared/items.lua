@@ -8,6 +8,19 @@ UT.badges = {
     maxdist = 10.0, -- max distance to effect nearby peds
 }
 
+UT.mre = {
+    main1 = 'mre_chilimac',
+    main2 = 'mre_beefstew',
+    main3 = 'mre_chkenchilada',
+    main4 = 'mre_veggieomelet',
+    main5 = 'mre_chknking',
+    side1 = 'mre_corn',
+    side2 = 'mre_tmsoup',
+    bread = 'mre_bread',
+    drink = 'water',
+    snack = 'ps_qs'
+}
+
 UT.smoking = {
 
     vape = {
