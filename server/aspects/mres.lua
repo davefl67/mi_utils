@@ -13,6 +13,10 @@ lib.callback.register('miut:server:remove:mre', function(source)
     end
 end)
 
+lib.callback.register('miut:server:canceled:mre', function(source)
+    exports.ox_inventory:AddItem(source, 'mre_1', 1)
+end)
+
 lib.callback.register('miut:server:add:mre', function(source)
     deletebox()
     -- MRE main
@@ -41,7 +45,3 @@ lib.callback.register('miut:server:add:mre', function(source)
     exports.ox_inventory:AddItem(source, UT.mre.snack, 1)
 end)
 
--- give item to player
-lib.callback.register('miut:server:spawnbox:mre', function(source, crds)
-    obj = CreateObject('v_ind_cfbox2', crds.x, crds.y, crds.z-1, true, false, false)
-end)

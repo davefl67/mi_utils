@@ -1,4 +1,4 @@
-exports('mrepack', function()
+exports('box_beer_rancho', function()
     local crds = GetOffsetFromEntityInWorldCoords(cache.ped, 0.0, 0.6, 0.0)
     local head = GetEntityHeading(cache.ped)
     local box = lib.callback('miut:server:spawnbox:small', false, function() end, crds)
@@ -6,7 +6,7 @@ exports('mrepack', function()
     PlaceObjectOnGroundProperly(box)
     FreezeEntityPosition(box, true)
     SetEntityCollision(box, true, true)
-    lib.callback('miut:server:remove:mre')
+    lib.callback('miut:server:remove:ranchobox')
     if lib.progressBar({
         duration = 5000,
         label = 'Opening MRE',
@@ -20,7 +20,6 @@ exports('mrepack', function()
             scenario = 'CODE_HUMAN_MEDIC_TEND_TO_DEAD',
         },
     }) then
-        FreezeEntityPosition(box, false)
         lib.callback('miut:server:add:mre')
     else
         lib.callback('miut:server:canceled:mre')
