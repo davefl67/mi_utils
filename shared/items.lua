@@ -12,7 +12,7 @@ UT.alcohol = {
     -- beers
     rancho = 12,
     dusche = 12,
-    stronzo = 12,
+    blarny = 12,
     patriot = 12,
     -- liquor
     bourgeoix = 6,
