@@ -8,6 +8,10 @@ UT.badges = {
     maxdist = 10.0, -- max distance to effect nearby peds
 }
 
+UT.guncase = {
+    
+}
+
 UT.alcohol = {
     -- beers
     rancho = 12,
