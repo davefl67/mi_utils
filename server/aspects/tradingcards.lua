@@ -123,7 +123,7 @@ local tradingcardmeta = {
 
 
 
-    -- RR #20
+    -- RR #15
     [20] = {
         label = 'L.S. Lore: Andreas Sanchez',
         description = 'I\'m out. Agent Haines\'ll get in touch with you once Operation Save the World\'s a go. Get your crew together, okay?',
@@ -215,45 +215,195 @@ local tradingcardmeta = {
         image = 'card_paigehs'
     },
     [35] = {
-        label = 'L.S. Lore: Rickie Lukens',
-        description = 'I need work, and I thought maybe you could provide. I mean, I\'m smart enough to track you down, aren\'t I?',
-        type = 'Rare',
-        image = 'card_rickiels'
-    },
-    [36] = {
-        label = 'L.S. Lore: Taliana Martinez',
-        description = 'duuuude',
-        type = 'Rare',
-        image = 'card_talianamz'
-    },
-    [37] = {
-        label = 'L.S. Lore: Anita Mendoza',
-        description = 'Umm, let me just, okay... Umm... I\'m gonna go with Masturbating Monkeys.',
-        type = 'Rare',
-        image = 'card_anitama'
-    },
-    [38] = {
         label = 'L.S. Lore: Chop',
         description = '(growls in good boy)',
         type = 'Rare',
         image = 'card_chop'
     },
+
+
+    -- RR #20
+    [36] = {
+        label = 'L.S. Lore: Abigail Mathers',
+        description = 'It may surprise you to learn that along with being a beautiful, finely put together woman, I am also an expert in nautical engineering and glass degradation.',
+        type = 'Uncommon',
+        image = 'card_abigailms'
+    },
+    [37] = {
+        label = 'L.S. Lore: Al Di Napoli',
+        description = 'Sometimes it\'s really tough being a famous hard man as everyone just wants to fight you but they soon see I\'m just a big old softle. Despite what my ex wife says in her book.',
+        type = 'Uncommon',
+        image = 'card_aldini'
+    },
+    [38] = {
+        label = 'L.S. Lore: Barry',
+        description = 'We\'re gonna bring down the government by smoking weed together in a public place. It\'s very effective. I\'m prepared to be a martyr, friend... Are you?',
+        type = 'Uncommon',
+        image = 'card_barry'
+    },
     [39] = {
-        label = 'L.S. Lore: Hugh Harrison',
-        description = '(he\'s not even british, she just acts like it)',
-        type = 'Rare',
-        image = 'card_hughhn'
+        label = 'L.S. Lore: Beverly Felton',
+        description = 'Because they all think they\'re Gods, right? Well fuck them! FUCK THEM! FUCK THEM! FUCK THEM! FUCK! THEM! Fuck them, they\'re not magic, no, they\'re no better than me!',
+        type = 'Uncommon',
+        image = 'card_beverlyfn'
     },
     [40] = {
-        label = 'L.S. Lore: Imran Shinowa',
-        description = '(was not avaliable at the time for a quote. We think he\'s dead)',
-        type = 'Rare',
-        image = 'card_imransa'
+        label = 'L.S. Lore: Cletus Ewing',
+        description = 'A bad day huntin\' still beats a good day workin\', my pa always used to say.',
+        type = 'Uncommon',
+        image = 'card_cletuseg'
+    },
+    [41] = {
+        label = 'L.S. Lore: Cris Formage',
+        description = 'I am everywhere, all at once.',
+        type = 'Uncommon',
+        image = 'card_crisfe'
+    },
+    [42] = {
+        label = 'L.S. Lore: Dom Beasley',
+        description = 'See, I\'m not an adrenaline junkie, I\'m a control junkie.',
+        type = 'Uncommon',
+        image = 'card_domby'
+    },
+    [43] = {
+        label = 'L.S. Lore: Jimmy Boston',
+        description = 'Ow, it just gave me a shock. Maybe Kraff\'s trying to tell me something.',
+        type = 'Uncommon',
+        image = 'card_jimmybn'
+    },
+    [44] = {
+        label = 'L.S. Lore: Joe',
+        description = 'These people are criminals who threaten our way of life and drive down our property prices.',
+        type = 'Uncommon',
+        image = 'card_joe'
+    },
+    [45] = {
+        label = 'L.S. Lore: Joscha',
+        description = 'Something, something, Kifflom',
+        type = 'Uncommon',
+        image = 'card_joscha'
+    },
+    [46] = {
+        label = 'L.S. Lore: Josef',
+        description = 'Все вы, нелегалы, как один! Ты под гражданским арестом, ты понял? (English: "All you illegal immigrants are the same! You\'re now under civil arrest. Do you understand?")',
+        type = 'Uncommon',
+        image = 'card_josef'
+    },
+    [47] = {
+        label = 'L.S. Lore: Josh Bernstein',
+        description = 'I used to sell houses like this all the time. I sold dreams. I made lives meaningful.',
+        type = 'Uncommon',
+        image = 'card_joshbn'
+    },
+    [48] = {
+        label = 'L.S. Lore: Kerry McIntosh',
+        description = 'Are you on Snapmatic? My snaps are legit. Like, I\'m a brand ambassador for so many brands now.',
+        type = 'Uncommon',
+        image = 'card_kerrymh'
+    },
+    [49] = {
+        label = 'L.S. Lore: Manuel',
+        description = 'My family has been here two hundred years. I\'m more American than you. Not that it\'s anything to boast about.',
+        type = 'Uncommon',
+        image = 'card_manuel'
+    },
+    [50] = {
+        label = 'L.S. Lore: Mark Fostenburg',
+        description = 'These clubs were custom made in Japan! The grips are seal skin! I have sensitive palms!',
+        type = 'Uncommon',
+        image = 'card_markfg'
+    },
+    [51] = {
+        label = 'L.S. Lore: Marnie Allen',
+        description = 'I was lost. I sold myself. I took drugs. I was in conflict. Then I discovered an incredible truth. A truth so incredible, that if I told to you now, you would melt into nothingness.',
+        type = 'Uncommon',
+        image = 'card_marnieallen'
+    },
+    [52] = {
+        label = 'L.S. Lore: Mary-Ann Quinn',
+        description = 'No, I don\'t want to sleep with you, and no, I don\'t care that I\'m thirty-nine and single. It doesn\'t worry me a bit.',
+        type = 'Uncommon',
+        image = 'card_maryannqn'
+    },
+    [53] = {
+        label = 'L.S. Lore: Miranda Cowan',
+        description = 'The Silicone Slattern',
+        type = 'Uncommon',
+        image = 'card_mirandacn'
+    },
+    [54] = {
+        label = 'L.S. Lore: Mrs. Philips',
+        description = 'I don\'t want your Goddamn money! Is that what you think I am? A prostitute? Still? You\'re sick!',
+        type = 'Uncommon',
+        image = 'card_mrsphilips'
+    },
+    [55] = {
+        label = 'L.S. Lore: Mrs. Thornhill',
+        description = 'Nigel, he remembers me!',
+        type = 'Uncommon',
+        image = 'card_mrsthornhill'
+    },
+    [56] = {
+        label = 'L.S. Lore: Nigel Thornhill',
+        description = 'I am currently on holiday in the United States of America. If you are telephoning from England, I will return your call as soon as I fathom the plus sign on this mobile.',
+        type = 'Uncommon',
+        image = 'card_nigeltl'
+    },
+    [57] = {
+        label = 'L.S. Lore: Omega',
+        description = ' There was a brilliant joy, and a terrible confusion, and they were laughing and screaming and crying all at once, and some said, "Omega, we come in peace!" and others said, "We have come to enslave you! We are an infinitely intelligent race of super cosmic beings, and out of the six billion people on this planet we have chosen you for no good reason." ',
+        type = 'Uncommon',
+        image = 'card_omega'
+    },
+    [58] = {
+        label = 'L.S. Lore: Poppy Mitchell',
+        description = 'I will fucking destroy you, and everyone who knows you!',
+        type = 'Uncommon',
+        image = 'card_poppyml'
+    },
+    [59] = {
+        label = 'L.S. Lore: Princess Georgina',
+        description = 'You know, it takes hundreds of years of inbreeding to get a recessed chin, buck teeth, and a snout-like nose like mine',
+        type = 'Uncommon',
+        image = 'card_princessga'
+    },
+    [60] = {
+        label = 'L.S. Lore: Sasquatch Hunter',
+        description = 'I thought you was a \'squatch... nearly put a bullet in you.',
+        type = 'Uncommon',
+        image = 'card_sasquatchhr'
+    },
+    [61] = {
+        label = 'L.S. Lore: Sasquatch Roleplayer',
+        description = 'Hey... I\'m no freak! It\'s perfectly normal to admit to being aroused role playing dressed as a fantastical beast... Woof!',
+        type = 'Uncommon',
+        image = 'card_sasquatchrp'
+    },
+    [62] = {
+        label = 'L.S. Lore: Tom',
+        description = 'Truth must be revealed gradually, until you are capable of understanding it.',
+        type = 'Uncommon',
+        image = 'card_tom'
+    },
+    [63] = {
+        label = 'L.S. Lore: Tonya Wiggins',
+        description = 'Well, where\'s your love for the hood? JB ain\'t doin\' good, he needs help.',
+        type = 'Uncommon',
+        image = 'card_tonyaws'
+    },
+    [64] = {
+        label = 'L.S. Lore: Tyler Dixon',
+        description = 'Tale Of Us! I\'m about to get enough tail for the both of us.',
+        type = 'Uncommon',
+        image = 'card_tylerdn'
+    },
+    [65] = {
+        label = 'L.S. Lore: Willy',
+        description = 'At last man, time for a well earned drink.',
+        type = 'Uncommon',
+        image = 'card_willy'
     },
 
-
-
-    -- UC #30
 
 }
 
@@ -261,9 +411,10 @@ local tradingcardmeta = {
     [x] = {
         label = 'L.S. Lore: name',
         description = 'desc',
-        type = 'Uncommon',
+        type = 'Common',
         image = 'card_'
     },
+    
 ]]
 
 RegisterCommand('givecard', function(source)
