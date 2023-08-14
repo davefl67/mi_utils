@@ -1,0 +1,2 @@
+-- tent, sleeping bag, folding chair
+-- -596943609, -1356608749, 1071807406
