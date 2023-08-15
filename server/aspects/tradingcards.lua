@@ -405,6 +405,68 @@ local tradingcardmeta = {
     },
 
 
+    -- RR #
+    [66] = {
+        label = 'L.S. Lore: Antonia Bottino',
+        description = 'We were moving around safehouses in rat-hole hick towns where no one comes looking.',
+        type = 'Common',
+        image = 'card_'
+    },
+    [67] = {
+        label = 'L.S. Lore: Castro Lagano',
+        description = 'Then she goes and literally air our dirty laundry in front of all the neighbors, I mean, show some class.',
+        type = 'Common',
+        image = 'card_'
+    },
+    [68] = {
+        label = 'L.S. Lore: Groom in Trouble',
+        description = 'I promised her I wouldn\'t go crazy. She\'s gonna kill me! I\'m such an idiot!',
+        type = 'Common',
+        image = 'card_'
+    },
+    [69] = {
+        label = 'L.S. Lore: Lacey Jonas',
+        description = 'I\'m really famous. I didn\'t do anything!',
+        type = 'Common',
+        image = 'card_'
+    },
+    [70] = {
+        label = 'L.S. Lore: Runaway Bride',
+        description = 'People see a girl screaming in a wedding dress and they assume crazy! He\'s the crazy one, not me. Talk about anger issues.',
+        type = 'Common',
+        image = 'card_'
+    },
+    [71] = {
+        label = 'L.S. Lore: Saeeda Kadam',
+        description = 'Oh, thank heavens! Well, it\'s still in one piece at least. I should be greateful for that. Thank you. My name is Saeeda.',
+        type = 'Common',
+        image = 'card_'
+    },
+    [72] = {
+        label = 'L.S. Lore: Timm',
+        description = 'Sorry, I\'m a numbers guy... but outward-facing. I can work a spreadsheet, but I can also work a room. I run the models, I date the models, you know what I mean?',
+        type = 'Common',
+        image = 'card_'
+    },
+    [73] = {
+        label = 'L.S. Lore: Ursula',
+        description = 'I don\'t normally get visitors anymore. There was a gardener, but he got sick and fell off the cliff.',
+        type = 'Common',
+        image = 'card_'
+    },
+    [74] = {
+        label = 'L.S. Lore: Andy Moon',
+        description = 'Meditate... meditate. Well I meditate. I\'ve been to the mountain top, and I\'ve been to the hanging valleys, and I\'ve been to where the sun sleeps.',
+        type = 'Common',
+        image = 'card_'
+    },
+    [75] = {
+        label = 'L.S. Lore: Bill Binder',
+        description = ' I\'ve got all the toys - sports cars, condos, harem of nubile women, weapons, my own water supply. I\'m living the dream, but I also want to help out random strangers.',
+        type = 'Common',
+        image = 'card_'
+    },
+    
 }
 
 --[[
