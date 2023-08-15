@@ -558,16 +558,6 @@ local tradingcardmeta = {
     },
 }
 
---[[
-    [x] = {
-        label = 'L.S. Lore: name',
-        description = 'desc',
-        type = 'Common',
-        image = 'card_'
-    },
-    
-]]
-
 RegisterCommand('givecard', function(source)
     local hookId = exports.ox_inventory:registerHook('createItem', function(payload)
         local gtavcard = tradingcardmeta[payload.metadata.type]
