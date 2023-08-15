@@ -466,7 +466,96 @@ local tradingcardmeta = {
         type = 'Common',
         image = 'card_'
     },
-    
+    [76] = {
+        label = 'L.S. Lore: Impotent Rage',
+        description = 'I\'m mad. Almost crazy. I\'m... Impotent Rage!',
+        type = 'Common',
+        image = 'card_'
+    },
+    [77] = {
+        label = 'L.S. Lore: Jesco White',
+        description = 'If You Wanna Get To Heaven...',
+        type = 'Common',
+        image = 'card_'
+    },
+    [78] = {
+        label = 'L.S. Lore: Pamela Drake',
+        description = 'Do you remember the little attractive slut who stole Malcome Brotherly from Rosemary Heston? I was that slut!',
+        type = 'Common',
+        image = 'card_'
+    },
+    [79] = {
+        label = 'L.S. Lore: Griff',
+        description = 'This country was not built on hardworking immigrant labour!',
+        type = 'Common',
+        image = 'card_'
+    },
+    [80] = {
+        label = 'L.S. Lore: Jerome',
+        description = 'I am your true salvation - join me - as I joined my brother in Liberty City.',
+        type = 'Common',
+        image = 'card_'
+    },
+    [81] = {
+        label = 'L.S. Lore: Jackson Skinner',
+        description = 'What\'s this guy\'s problem? He\'s riding my ass.',
+        type = 'Common',
+        image = 'card_'
+    },
+    [82] = {
+        label = 'L.S. Lore: Elisa Macallen',
+        description = 'We\'re going to have some fun, cariño.',
+        type = 'Common',
+        image = 'card_'
+    },
+    [83] = {
+        label = 'L.S. Lore: Enzo Bonelli',
+        description = 'I\'m going to stay near the chopper. You dumb fucks do your job!',
+        type = 'Common',
+        image = 'card_'
+    },
+    [84] = {
+        label = 'L.S. Lore: Alonzo',
+        description = 'My girl\'s broken down, idiota. I told her a hundred times about going out without me.',
+        type = 'Common',
+        image = 'card_'
+    },
+    [85] = {
+        label = 'L.S. Lore: Keyla',
+        description = 'Can you take me to the Central Los Santos Medical Center off Capital Boulevard?',
+        type = 'Common',
+        image = 'card_'
+    },
+    [86] = {
+        label = 'L.S. Lore: Chastity',
+        description = 'She\'s as dirty as your dreams, it\'s Chastity! — Vanilla Unicorn introduction',
+        type = 'Common',
+        image = 'card_'
+    },
+    [87] = {
+        label = 'L.S. Lore: Cheetah',
+        description = 'Hear her roar, it\'s time for the lovely Cheetah! — Vanilla Unicorn introduction',
+        type = 'Common',
+        image = 'card_'
+    },
+    [88] = {
+        label = 'L.S. Lore: Infernus',
+        description = 'Follow Infernus. I\'ll take care of you. — Vanilla Unicorn introduction',
+        type = 'Common',
+        image = 'card_'
+    },
+    [98] = {
+        label = 'L.S. Lore: name',
+        description = 'And now, the jewel in the treasure chest of hotness, it\'s sexy Sapphire! — Vanilla Unicorn introduction',
+        type = 'Common',
+        image = 'card_'
+    },
+    [90] = {
+        label = 'L.S. Lore: Will Mercer',
+        description = 'Look\'s like I made the wrong at the Great Ocean Highway. Oh well, I\'m in your world now.',
+        type = 'Oops',
+        image = 'card_willmr'
+    },
 }
 
 --[[
