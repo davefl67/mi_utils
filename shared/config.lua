@@ -26,9 +26,6 @@ CG.tackle = false -- WIP, does not work
 -- stops peds from dropping weapons on death
 CG.noweapdrop = true
 
--- sets recoils for specific weapons
-CG.recoil = true
-
 -- sets player skills
 CG.skill = {
     allow = true,

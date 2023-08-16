@@ -559,7 +559,7 @@ local tradingcardmeta = {
 }
 
 exports('lstradingcard_pack', function(source)
-    local waittime = 500
+    local waittime, metachance = 500, nil
     local hookId = exports.ox_inventory:registerHook('createItem', function(payload)
         local gtavcard = tradingcardmeta[payload.metadata.type]
         if not gtavcard then return end
@@ -569,16 +569,25 @@ exports('lstradingcard_pack', function(source)
             lstradingcard = true
         }
     })
-    local metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
+    metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
     Inventory:AddItem(source, 'lstradingcard', 1, metachance)
     Citizen.Wait(waittime)
+
+    metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
     Inventory:AddItem(source, 'lstradingcard', 1, metachance)
     Citizen.Wait(waittime)
+
+    metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
     Inventory:AddItem(source, 'lstradingcard', 1, metachance)
     Citizen.Wait(waittime)
+
+    metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
     Inventory:AddItem(source, 'lstradingcard', 1, metachance)
     Citizen.Wait(waittime)
+
+    metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
     Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+    Citizen.Wait(waittime)
 end)
 
 RegisterCommand('givecard', function(source)
