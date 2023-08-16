@@ -8,8 +8,29 @@ UT.badges = {
     maxdist = 10.0, -- max distance to effect nearby peds
 }
 
-UT.guncase = {
-    
+UT.camping = {
+    tent = {
+
+    },
+    campfire = {
+
+    },
+    chair = {
+        
+    }
+}
+
+UT.ammo = {
+    ammo_22m = 30,
+    ammo_38m = 30,
+    ammo_44m = 30,
+    ammo_45m = 30,
+    ammo_50m = 30,
+    ammo_9m = 30,
+    ammo_b00 = 30,
+    ammo_556m = 60,
+    ammo_762m = 60,
+    ammo_76251m = 20
 }
 
 UT.alcohol = {
@@ -27,7 +48,6 @@ UT.alcohol = {
     nogo = 6,
     mount = 6,
     richards = 6
-
 }
 
 UT.mre = {

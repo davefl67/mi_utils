@@ -558,7 +558,8 @@ local tradingcardmeta = {
     },
 }
 
-RegisterCommand('givecard', function(source)
+exports('lstradingcard_pack', function(source)
+    local waittime = 500
     local hookId = exports.ox_inventory:registerHook('createItem', function(payload)
         local gtavcard = tradingcardmeta[payload.metadata.type]
         if not gtavcard then return end
@@ -570,6 +571,46 @@ RegisterCommand('givecard', function(source)
     })
     local metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
     Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+    Citizen.Wait(waittime)
+    Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+    Citizen.Wait(waittime)
+    Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+    Citizen.Wait(waittime)
+    Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+    Citizen.Wait(waittime)
+    Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+end)
+
+RegisterCommand('givecard', function(source)
+    local waittime, metachance = 500, nil
+    local hookId = exports.ox_inventory:registerHook('createItem', function(payload)
+        local gtavcard = tradingcardmeta[payload.metadata.type]
+        if not gtavcard then return end
+        return gtavcard
+    end, {
+        itemFilter = {
+            lstradingcard = true
+        }
+    })
+    metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
+    Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+    Citizen.Wait(waittime)
+
+    metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
+    Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+    Citizen.Wait(waittime)
+
+    metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
+    Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+    Citizen.Wait(waittime)
+
+    metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
+    Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+    Citizen.Wait(waittime)
+
+    metachance = tradingcardmeta[math.random(1, #tradingcardmeta)]
+    Inventory:AddItem(source, 'lstradingcard', 1, metachance)
+    Citizen.Wait(waittime)
 end, false)
 
 exports('lstradingcard', function(event, item, inventory, slot, data)
