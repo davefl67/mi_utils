@@ -410,145 +410,145 @@ local tradingcardmeta = {
         label = 'L.S. Lore: Antonia Bottino',
         description = 'We were moving around safehouses in rat-hole hick towns where no one comes looking.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_antoniabo'
     },
     [67] = {
         label = 'L.S. Lore: Castro Lagano',
         description = 'Then she goes and literally air our dirty laundry in front of all the neighbors, I mean, show some class.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_castrolo'
     },
     [68] = {
         label = 'L.S. Lore: Groom in Trouble',
         description = 'I promised her I wouldn\'t go crazy. She\'s gonna kill me! I\'m such an idiot!',
         type = 'Common',
-        image = 'card_'
+        image = 'card_groomtrouble'
     },
     [69] = {
         label = 'L.S. Lore: Lacey Jonas',
         description = 'I\'m really famous. I didn\'t do anything!',
         type = 'Common',
-        image = 'card_'
+        image = 'card_laceyjs'
     },
     [70] = {
         label = 'L.S. Lore: Runaway Bride',
         description = 'People see a girl screaming in a wedding dress and they assume crazy! He\'s the crazy one, not me. Talk about anger issues.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_runawaybride'
     },
     [71] = {
         label = 'L.S. Lore: Saeeda Kadam',
         description = 'Oh, thank heavens! Well, it\'s still in one piece at least. I should be greateful for that. Thank you. My name is Saeeda.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_saeedakm'
     },
     [72] = {
         label = 'L.S. Lore: Timm',
         description = 'Sorry, I\'m a numbers guy... but outward-facing. I can work a spreadsheet, but I can also work a room. I run the models, I date the models, you know what I mean?',
         type = 'Common',
-        image = 'card_'
+        image = 'card_timm'
     },
     [73] = {
         label = 'L.S. Lore: Ursula',
         description = 'I don\'t normally get visitors anymore. There was a gardener, but he got sick and fell off the cliff.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_ursula'
     },
     [74] = {
         label = 'L.S. Lore: Andy Moon',
         description = 'Meditate... meditate. Well I meditate. I\'ve been to the mountain top, and I\'ve been to the hanging valleys, and I\'ve been to where the sun sleeps.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_andymn'
     },
     [75] = {
         label = 'L.S. Lore: Bill Binder',
         description = ' I\'ve got all the toys - sports cars, condos, harem of nubile women, weapons, my own water supply. I\'m living the dream, but I also want to help out random strangers.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_billbr'
     },
     [76] = {
         label = 'L.S. Lore: Impotent Rage',
         description = 'I\'m mad. Almost crazy. I\'m... Impotent Rage!',
         type = 'Common',
-        image = 'card_'
+        image = 'card_impotentrage'
     },
     [77] = {
         label = 'L.S. Lore: Jesco White',
         description = 'If You Wanna Get To Heaven...',
         type = 'Common',
-        image = 'card_'
+        image = 'card_jescowe'
     },
     [78] = {
         label = 'L.S. Lore: Pamela Drake',
         description = 'Do you remember the little attractive slut who stole Malcome Brotherly from Rosemary Heston? I was that slut!',
         type = 'Common',
-        image = 'card_'
+        image = 'card_pamelade'
     },
     [79] = {
         label = 'L.S. Lore: Griff',
         description = 'This country was not built on hardworking immigrant labour!',
         type = 'Common',
-        image = 'card_'
+        image = 'card_griff'
     },
     [80] = {
         label = 'L.S. Lore: Jerome',
         description = 'I am your true salvation - join me - as I joined my brother in Liberty City.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_jerome'
     },
     [81] = {
         label = 'L.S. Lore: Jackson Skinner',
         description = 'What\'s this guy\'s problem? He\'s riding my ass.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_jacksomsr'
     },
     [82] = {
         label = 'L.S. Lore: Elisa Macallen',
         description = 'We\'re going to have some fun, cariño.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_elisamn'
     },
     [83] = {
         label = 'L.S. Lore: Enzo Bonelli',
         description = 'I\'m going to stay near the chopper. You dumb fucks do your job!',
         type = 'Common',
-        image = 'card_'
+        image = 'card_enzobi'
     },
     [84] = {
         label = 'L.S. Lore: Alonzo',
         description = 'My girl\'s broken down, idiota. I told her a hundred times about going out without me.',
         type = 'Common',
-        image = 'card_'
+        image = 'card_alonzo'
     },
     [85] = {
         label = 'L.S. Lore: Keyla',
         description = 'Can you take me to the Central Los Santos Medical Center off Capital Boulevard?',
         type = 'Common',
-        image = 'card_'
+        image = 'card_keyla'
     },
     [86] = {
         label = 'L.S. Lore: Chastity',
         description = 'She\'s as dirty as your dreams, it\'s Chastity! — Vanilla Unicorn introduction',
         type = 'Common',
-        image = 'card_'
+        image = 'card_chastity'
     },
     [87] = {
         label = 'L.S. Lore: Cheetah',
         description = 'Hear her roar, it\'s time for the lovely Cheetah! — Vanilla Unicorn introduction',
         type = 'Common',
-        image = 'card_'
+        image = 'card_cheetah'
     },
     [88] = {
         label = 'L.S. Lore: Infernus',
         description = 'Follow Infernus. I\'ll take care of you. — Vanilla Unicorn introduction',
         type = 'Common',
-        image = 'card_'
+        image = 'card_infernus'
     },
     [98] = {
-        label = 'L.S. Lore: name',
+        label = 'L.S. Lore: Sapphire',
         description = 'And now, the jewel in the treasure chest of hotness, it\'s sexy Sapphire! — Vanilla Unicorn introduction',
         type = 'Common',
-        image = 'card_'
+        image = 'card_sapphire'
     },
     [90] = {
         label = 'L.S. Lore: Will Mercer',
