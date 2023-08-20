@@ -20,13 +20,12 @@ dependencies {
 
 -- shared
 shared_scripts {
-	'@ox_lib/init.lua',
+    '@ox_lib/init.lua',
     'shared/items.lua',
     'shared/config.lua',
 }
 -- client
 client_scripts {
-    '@ox_core/imports/client.lua',
     'client/aspects/*.lua',
     'client/main.lua'
 }
