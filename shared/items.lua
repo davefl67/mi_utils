@@ -16,8 +16,24 @@ UT.camping = {
 
     },
     chair = {
-        
+
     }
+}
+
+UT.drugprocess = {
+    setuptime = 5000,
+    weedsativa = {
+        itemtake_name = 'cannabis_sativa',
+        itemtake_amnt = 2,
+        itemgive_name = '',
+        itemgive_amnt = 1
+    },
+    weedindica = {
+
+    },
+    weedhybrid = {
+
+    },
 }
 
 UT.ammo = {
