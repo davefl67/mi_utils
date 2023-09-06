@@ -50,6 +50,40 @@ AddEventHandler('OT_rappel:rappel', function()
         Wait(0)
     end
 end)
+
+local clipset = RequestClipSet('anim_heist@hs3f@ig1_rappel@male@')
+local dict = lib.requestAnimDict('anim_heist@hs3f@ig1_rappel@male@', 300)
+
+TaskPlayAnim(cache.ped, dict, 'start_rappel', 8.0, 8.0, -1, -1, 0.5, true, true, true)
 ]]
 
 --I want this shit to work
+
+RegisterCommand('rappel', function()
+    if lib.progressBar({
+        duration = 2000,
+        label = 'Preparing to rappel',
+        useWhileDead = false,
+        canCancel = true,
+        disable = {
+            car = true,
+            move = true
+        },
+        anim = {
+            scenario = 'CODE_HUMAN_MEDIC_TEND_TO_DEAD',
+        },
+    }) then
+        local startloc, groundloc = GetEntityCoords(cache.ped), GetEntityHeightAboveGround(cache.ped)
+        print(groundloc)
+        
+        local rope = lib.callback('miut:server:object:hook', false,
+        function() end, startloc, 'prop_rope_family_3')
+        RopeLoadTextures()
+        SetEntityHeading(rope, GetEntityHeading(cache.ped))
+        FreezeEntityPosition(rope, true)
+
+        local ropeoffset = GetOffsetFromEntityInWorldCoords(cache.ped, 0.0, 0.2, -0.9)
+        local loadrope = AddRope(ropeoffset.x, ropeoffset.y, ropeoffset.z, -90.0, 90.0, -90.0, 200.0, 7, 200.0, 200.0, 1.2, false, true, true, 10.0, true)
+    end
+    
+end, false)
