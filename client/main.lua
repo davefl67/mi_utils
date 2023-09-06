@@ -6,12 +6,11 @@ AddEventHandler('onResourceStart', function()
 	if CG.skill.allow then
 		StatSetInt('MP0_SHOOTING_ABILITY', CG.skill.shooting, true)
 		StatSetInt('MP0_STAMINA', CG.skill.stamina, true)
-		StatSetInt('MP0_STRENGTH', CG.skill.stamina, true)
-		StatSetInt('MP0_LUNG_CAPACITY', CG.skill.stamina, true)
-		StatSetInt('MP0_WHEELIE_ABILITY', CG.skill.stamina, true)
-		StatSetInt('MP0_FLYING_ABILITY', CG.skill.stamina, true)
-		StatSetInt('MP0_SHOOTING_ABILITY', CG.skill.stamina, true)
-		StatSetInt('MP0_STEALTH_ABILITY', CG.skill.stamina, true)
+		StatSetInt('MP0_STRENGTH', CG.skill.strength, true)
+		StatSetInt('MP0_LUNG_CAPACITY', CG.skill.breathing, true)
+		StatSetInt('MP0_WHEELIE_ABILITY', CG.skill.wheelie, true)
+		StatSetInt('MP0_FLYING_ABILITY', CG.skill.flying, true)
+		StatSetInt('MP0_STEALTH_ABILITY', CG.skill.stealth, true)
 	end
 end)
 
