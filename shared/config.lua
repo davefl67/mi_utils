@@ -14,6 +14,9 @@ CG.idle = true
 -- hides default hud components
 CG.hud = true
 
+-- hides default aiming reticle
+CG.aim = true
+
 -- reduces damage from melee weapons
 CG.dmg = true
 

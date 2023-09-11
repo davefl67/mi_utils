@@ -40,6 +40,8 @@ Citizen.CreateThread(function()
 			HideHudComponentThisFrame(7)
 			HideHudComponentThisFrame(8)
 			HideHudComponentThisFrame(9)
+		end
+		if CG.aim then
 			HideHudComponentThisFrame(14)
 		end
 		if CG.dmg then
