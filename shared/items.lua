@@ -138,7 +138,7 @@ UT.vehicle = {
 
 UT.divegear = {
     time = 150.00, -- sets new time for oxygen level in seconds
-    restrict = false -- allow players to use gear while in water
+    restrict = true -- allow players to use gear while in water
 }
 
 UT.riotshield = {
