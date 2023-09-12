@@ -1,11 +1,12 @@
-local player = PlayerPedId()
 local maskmodel, tankmodel = 
 lib.requestModel('p_d_scuba_mask_s', 100), 
 lib.requestModel('p_s_scuba_tank_s', 100)
 local mask, tank
 local equip = { mask = 0, tank = 0, used = false }
 
-local systemon = function()
+equip.mask, equip.tank, equip.used = 0, 0, false
+
+local systemon = function(player)
     while not HasModelLoaded(maskmodel)
     and not HasModelLoaded(tankmodel) do
         Citizen.Wait(10)
@@ -44,7 +45,7 @@ local systemon = function()
     end
 end
 
-local systemoff = function()
+local systemoff = function(player)
     if equip.used then
         if lib.progressBar({
             duration = 5000,
@@ -78,7 +79,7 @@ end
 exports('divegear', function()
     if UT.divegear.restrict then
         if not equip.used then
-            if IsPedSwimming(player) or IsPedSwimmingUnderWater(player) then
+            if IsPedSwimming(cache.ped) or IsPedSwimmingUnderWater(cache.ped) then
                 lib.notify({
                     id = Ntfy.id,
                     title = 'You can\'t mess with your gear',
@@ -95,10 +96,10 @@ exports('divegear', function()
                     iconColor = Ntfy.iconclr
                 })
             else
-                systemon()
+                systemon(cache.ped)
             end
         elseif equip.used then
-            if IsPedSwimming(player) or IsPedSwimmingUnderWater(player) then
+            if IsPedSwimming(cache.ped) or IsPedSwimmingUnderWater(cache.ped) then
                 lib.notify({
                     id = Ntfy.id,
                     title = 'You can\'t mess with your gear',
@@ -115,14 +116,14 @@ exports('divegear', function()
                     iconColor = Ntfy.iconclr
                 })
             else
-                systemoff()
+                systemoff(cache.ped)
             end
         else return end
     elseif not UT.divegear.restrict then
         if not equip.used then
-            systemon()
+            systemon(cache.ped)
         elseif equip.used then
-            systemoff()
+            systemoff(cache.ped)
         end
     else return end
 end)
