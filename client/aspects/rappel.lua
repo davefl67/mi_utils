@@ -55,9 +55,7 @@ local clipset = RequestClipSet('anim_heist@hs3f@ig1_rappel@male@')
 local dict = lib.requestAnimDict('anim_heist@hs3f@ig1_rappel@male@', 300)
 
 TaskPlayAnim(cache.ped, dict, 'start_rappel', 8.0, 8.0, -1, -1, 0.5, true, true, true)
-]]
 
---I want this shit to work
 
 RegisterCommand('rappel', function()
     if lib.progressBar({
@@ -87,3 +85,8 @@ RegisterCommand('rappel', function()
     end
     
 end, false)
+
+]]
+
+--I want this shit to work
+
