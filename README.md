@@ -1,6 +1,8 @@
 ![util](https://github.com/MesaIndigo/mi_utils/assets/116332087/e681f894-28a9-43ed-9f56-8c4195876aa3)
 
-### M.I. Resources Support Discord: [click me](https://discord.gg/XwhBUGErxY)
+
+**Currently on hiatus. Support will not be given as I am dealing with my mommy issues**
+
 ![GitHub all releases](https://img.shields.io/github/downloads/MesaIndigo/mi_utils/total)
 ![GitHub](https://img.shields.io/github/license/MesaIndigo/mi_utils)
 
