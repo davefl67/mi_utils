@@ -1,10 +1,24 @@
-![util](https://github.com/MesaIndigo/mi_utils/assets/116332087/e681f894-28a9-43ed-9f56-8c4195876aa3)
+# mi_utils
+### 👋🏻 Hi! Dave here,
 
+When Agimir went on his hiatus, at first I panicked. I really enjoy his **mi_utils** resource. 
 
-**Currently on hiatus. Support will not be given as I am dealing with my mommy issues**
+I've seen this sort of thing many times before, over the years. For whatever reason, developers leave active projects to die on Github in public archives. Sometimes it's real life creeping in, sometimes it's burnout. Sometimes, the repositories then disappear entirely. 
 
-![GitHub all releases](https://img.shields.io/github/downloads/MesaIndigo/mi_utils/total)
-![GitHub](https://img.shields.io/github/license/MesaIndigo/mi_utils)
+So, I did the smart thing and forked his repositories in September 2023. Sure as shit, they all went tits up and 404 in early 2024.
+
+I have several of Agimir's repos on my profile on Github. I salvaged what I could, and they are forked here. I'm still looking for others that were removed before I could fork them. As I find them, I'll upload them.
+
+I have looked at other forks. Many from those shady Github accounts that just fork everything that gets released to boost their traffic.
+
+My fork is many commits ahead of them all. I estimate that this fork is likely the one of the latest updated by Agimir himself.
+
+I am only learning to code in Lua. I can't do much with this right now, but I invite you to fork this and see what we can do yo improve upon what Agimir started. 
+
+Since I am a potato 🥔 I am unable to support this resource. 
+
+---
+---
 
 ## Description:
 This script is used for managing certain features of your server and as an export resource for the items I've made. I will be adding to this over time.
@@ -36,11 +50,14 @@ Export options for items:
 ## Dependencies:
 - [ox_lib](https://github.com/overextended/ox_lib)
 - [ox_target](https://github.com/overextended/ox_target)
-- [mi_stream](https://github.com/MIAgimir/mi_stream/releases)
+- [mi_stream](https://github.com/davefl67/mi_stream)
 
 ## Install
 - Download latest release
 - Place resource into your resources folder
 - Ensure the resource on your server.cfg
 
-If you want to use items / images but don't feel like making them, take a look at my [Ox_Items Template](https://github.com/MIAgimir/Ox_Inventory-ItemsTemplate/releases)
+If you want to use items / images but don't feel like making them, take a look at my [Ox_Items Template](https://github.com/davefl67/mi_oxitems)
+
+---
+📝 **NOTE:** Hey, Dave again, I also forked (and renamed) his item templates and also the streaming resources. The above links go to my forks.

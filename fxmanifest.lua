@@ -33,6 +33,6 @@ client_scripts {
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
     'server/aspects/*.lua',
-    'server/version.lua',
+    -- 'server/version.lua',
     'server/main.lua'
 }
