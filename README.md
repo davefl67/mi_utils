@@ -1,4 +1,13 @@
 # mi_utils
+
+Since most of you fuckers don't read, let me make this as simple as simple can be.
+
+*I offer this repo to the world as a **courtesy**. I forked it before the original author dropped off the planet and the repo went 404 and was lost. I'm neither a developer nor a programmer. I do not offer support for this repo.*
+
+Don't contact me on GitHub, Discord, or via any other medium for support for MIAgimir's resources. You may [reach them here](https://github.com/Mesa-Indigo).
+
+---
+
 ### 👋🏻 Hi! Dave here,
 
 When Agimir went on his hiatus, at first I panicked. I really enjoy his **mi_utils** resource. 
@@ -17,7 +26,6 @@ I am only learning to code in Lua. I can't do much with this right now, but I in
 
 Since I am a potato 🥔 I am unable to support this resource. 
 
----
 ---
 
 ## Description:
